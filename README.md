@@ -29,12 +29,12 @@ The builder needs the channel id provided int the Screeb admin web page :
 ```java
 @Override
 public void onCreate(){
-        super.onCreate();
+   super.onCreate();
 
-        screeb=new Screeb.Builder()
-                        .withChannelId("082b7590-1621-4f72-8030-731a98cd1448")
-                        .withContext(this)
-                        .build();
+   screeb = new Screeb.Builder()
+                   .withChannelId("082b7590-1621-4f72-8030-731a98cd1448")
+                   .withContext(this)
+                   .build();
 }
 ```
 
@@ -49,11 +49,11 @@ In this project, a `ScreebModule.java` class is provided that is configured to c
 functions `setIdentity()`, `trackEvent()`, `trackScreen()` and `setVisitorProperties()`.
 
 ```java
-    @ReactMethod
-    public void setIdentity(String userId) {
-        Log.d("ScreebModule", "Called setIdentity : " + userId);
-        MainApplication.screeb.setIdentity(userId);
-    }
+@ReactMethod
+public void setIdentity(String userId) {
+    Log.d("ScreebModule", "Called setIdentity : " + userId);
+    MainApplication.screeb.setIdentity(userId);
+}
 ```
 
 We need to provide a `ScreebPackage.java` class too, that inherits from `ReactPackage` and references
@@ -76,10 +76,25 @@ Now, to call these functions, you'll find in `App.js` some examples
 using `ScreebModule` functions :
 
 ```js
-  const { ScreebModule } = NativeModules;
+const { ScreebModule } = NativeModules;
 
+const App: () => Node = () => {
   const onSetIdentity = () => {
       ScreebModule.setIdentity('ReactNativeUserId');
+  };
+  const onTrackEvent = () => {
+      ScreebModule.trackEvent('ReactNativeEventId');
+  };
+  const onTrackScreen = () => {
+      ScreebModule.trackScreen('ReactNativeScreen');
+  };
+  const onSetVisitorProperties = () => {
+      ScreebModule.setVisitorProperties(
+            {
+               'age': 10,
+               'isReactNative': true,
+               'name': 'React name',
+               'price': 65.7 });
   };
 ```
 
