@@ -186,7 +186,7 @@ dependencies {
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
     // Screeb SDK dependency
-    implementation 'app.screeb.sdk:android-sdk:0.8'
+    implementation 'app.screeb.sdk:android-sdk:0.9'
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
