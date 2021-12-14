@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ReactDemoApp.app"
-               BlueprintName = "ReactDemoApp"
-               ReferencedContainer = "container:ReactDemoApp.xcodeproj">
+               BuildableName = "ScreebReactDemoApp.app"
+               BlueprintName = "ScreebReactDemoApp"
+               ReferencedContainer = "container:ScreebReactDemoApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ReactDemoAppTests.xctest"
-               BlueprintName = "ReactDemoAppTests"
-               ReferencedContainer = "container:ReactDemoApp.xcodeproj">
+               BuildableName = "ScreebReactDemoAppTests.xctest"
+               BlueprintName = "ScreebReactDemoAppTests"
+               ReferencedContainer = "container:ScreebReactDemoApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactDemoApp.app"
-            BlueprintName = "ReactDemoApp"
-            ReferencedContainer = "container:ReactDemoApp.xcodeproj">
+            BuildableName = "ScreebReactDemoApp.app"
+            BlueprintName = "ScreebReactDemoApp"
+            ReferencedContainer = "container:ScreebReactDemoApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactDemoApp.app"
-            BlueprintName = "ReactDemoApp"
-            ReferencedContainer = "container:ReactDemoApp.xcodeproj">
+            BuildableName = "ScreebReactDemoApp.app"
+            BlueprintName = "ScreebReactDemoApp"
+            ReferencedContainer = "container:ScreebReactDemoApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

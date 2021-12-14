@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* ReactDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactDemoAppTests.m */; };
+		00E356F31AD99517003FC87E /* ScreebReactDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ScreebReactDemoAppTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		5102A3A40A183467CA5E1045 /* Pods_ScreebReactDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6254965ECD7C62CA6FC2A9D /* Pods_ScreebReactDemoApp.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C1633D05B50D29F4DDB7FF3F /* libPods-ReactDemoApp-ReactDemoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D20F61995E2DAFC818E6791 /* libPods-ReactDemoApp-ReactDemoAppTests.a */; };
-		E3C6F73B9E8E655D70EB3E2E /* libPods-ReactDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FE4EFA96E57CB52EB610C6 /* libPods-ReactDemoApp.a */; };
+		E8B3A75DADF472FD7FADD891 /* Pods_ScreebReactDemoApp_ScreebReactDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157473F689899BE966295F61 /* Pods_ScreebReactDemoApp_ScreebReactDemoAppTests.framework */; };
+		EB445EF32767C216005E307B /* ScreebWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB445EF22767C216005E307B /* ScreebWrapper.swift */; };
+		EB445EF52767C270005E307B /* ScreebWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB445EF42767C270005E307B /* ScreebWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,28 +24,31 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = ReactDemoApp;
+			remoteInfo = ScreebReactDemoApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* ReactDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* ScreebReactDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreebReactDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* ReactDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactDemoAppTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* ReactDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactDemoApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactDemoApp/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactDemoApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactDemoApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactDemoApp/main.m; sourceTree = "<group>"; };
-		67F0F5295E7E6E426047D402 /* Pods-ReactDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-ReactDemoApp/Pods-ReactDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
-		7400CE8E723C7D95B4D44983 /* Pods-ReactDemoApp-ReactDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactDemoApp-ReactDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactDemoApp-ReactDemoAppTests/Pods-ReactDemoApp-ReactDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactDemoApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9CA92CF0EB1913A25BB1B22A /* Pods-ReactDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactDemoApp.release.xcconfig"; path = "Target Support Files/Pods-ReactDemoApp/Pods-ReactDemoApp.release.xcconfig"; sourceTree = "<group>"; };
-		9D20F61995E2DAFC818E6791 /* libPods-ReactDemoApp-ReactDemoAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactDemoApp-ReactDemoAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFD13FD92A56B0870E56F8CE /* Pods-ReactDemoApp-ReactDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactDemoApp-ReactDemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-ReactDemoApp-ReactDemoAppTests/Pods-ReactDemoApp-ReactDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		D1FE4EFA96E57CB52EB610C6 /* libPods-ReactDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F21AD99517003FC87E /* ScreebReactDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreebReactDemoAppTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ScreebReactDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreebReactDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ScreebReactDemoApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ScreebReactDemoApp/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ScreebReactDemoApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ScreebReactDemoApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ScreebReactDemoApp/main.m; sourceTree = "<group>"; };
+		157473F689899BE966295F61 /* Pods_ScreebReactDemoApp_ScreebReactDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreebReactDemoApp_ScreebReactDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C3D7E5F78D91FDDDF51AEC /* Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ScreebReactDemoApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91ACE2D329AD85580141D5E1 /* Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9EBDE92787940E1B0FBFCC34 /* Pods-ScreebReactDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreebReactDemoApp.release.xcconfig"; path = "Target Support Files/Pods-ScreebReactDemoApp/Pods-ScreebReactDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		B3FAEA19C06B654F821C495E /* Pods-ScreebReactDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreebReactDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-ScreebReactDemoApp/Pods-ScreebReactDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EB445EED2767AA29005E307B /* ScreebReactDemoApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreebReactDemoApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB445EF22767C216005E307B /* ScreebWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreebWrapper.swift; sourceTree = "<group>"; };
+		EB445EF42767C270005E307B /* ScreebWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreebWrapper.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F6254965ECD7C62CA6FC2A9D /* Pods_ScreebReactDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreebReactDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1633D05B50D29F4DDB7FF3F /* libPods-ReactDemoApp-ReactDemoAppTests.a in Frameworks */,
+				E8B3A75DADF472FD7FADD891 /* Pods_ScreebReactDemoApp_ScreebReactDemoAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,20 +64,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C6F73B9E8E655D70EB3E2E /* libPods-ReactDemoApp.a in Frameworks */,
+				5102A3A40A183467CA5E1045 /* Pods_ScreebReactDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* ReactDemoAppTests */ = {
+		00E356EF1AD99517003FC87E /* ScreebReactDemoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* ReactDemoAppTests.m */,
+				00E356F21AD99517003FC87E /* ScreebReactDemoAppTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = ReactDemoAppTests;
+			path = ScreebReactDemoAppTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -83,39 +88,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* ReactDemoApp */ = {
+		13B07FAE1A68108700A75B9A /* ScreebReactDemoApp */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				EB445EF42767C270005E307B /* ScreebWrapper.m */,
+				EB445EF22767C216005E307B /* ScreebWrapper.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				EB445EED2767AA29005E307B /* ScreebReactDemoApp-Bridging-Header.h */,
 			);
-			name = ReactDemoApp;
+			name = ScreebReactDemoApp;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D1FE4EFA96E57CB52EB610C6 /* libPods-ReactDemoApp.a */,
-				9D20F61995E2DAFC818E6791 /* libPods-ReactDemoApp-ReactDemoAppTests.a */,
+				F6254965ECD7C62CA6FC2A9D /* Pods_ScreebReactDemoApp.framework */,
+				157473F689899BE966295F61 /* Pods_ScreebReactDemoApp_ScreebReactDemoAppTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		39E4EE61FB18281566F13D6F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				67F0F5295E7E6E426047D402 /* Pods-ReactDemoApp.debug.xcconfig */,
-				9CA92CF0EB1913A25BB1B22A /* Pods-ReactDemoApp.release.xcconfig */,
-				7400CE8E723C7D95B4D44983 /* Pods-ReactDemoApp-ReactDemoAppTests.debug.xcconfig */,
-				BFD13FD92A56B0870E56F8CE /* Pods-ReactDemoApp-ReactDemoAppTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -128,12 +124,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* ReactDemoApp */,
+				13B07FAE1A68108700A75B9A /* ScreebReactDemoApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* ReactDemoAppTests */,
+				00E356EF1AD99517003FC87E /* ScreebReactDemoAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				39E4EE61FB18281566F13D6F /* Pods */,
+				E9B81F3367A0251F74CBD2F9 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -143,56 +139,65 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* ReactDemoApp.app */,
-				00E356EE1AD99517003FC87E /* ReactDemoAppTests.xctest */,
+				13B07F961A680F5B00A75B9A /* ScreebReactDemoApp.app */,
+				00E356EE1AD99517003FC87E /* ScreebReactDemoAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E9B81F3367A0251F74CBD2F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3FAEA19C06B654F821C495E /* Pods-ScreebReactDemoApp.debug.xcconfig */,
+				9EBDE92787940E1B0FBFCC34 /* Pods-ScreebReactDemoApp.release.xcconfig */,
+				75C3D7E5F78D91FDDDF51AEC /* Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.debug.xcconfig */,
+				91ACE2D329AD85580141D5E1 /* Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ReactDemoAppTests */ = {
+		00E356ED1AD99517003FC87E /* ScreebReactDemoAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactDemoAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ScreebReactDemoAppTests" */;
 			buildPhases = (
-				9DC5C3E379127C7E956014F4 /* [CP] Check Pods Manifest.lock */,
+				692AA29035277235B064F93F /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				E487111726071BF9A535F9F1 /* [CP] Embed Pods Frameworks */,
-				AC38FE457DA13890407FA589 /* [CP] Copy Pods Resources */,
+				60F90621534F7C85405D85AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = ReactDemoAppTests;
-			productName = ReactDemoAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* ReactDemoAppTests.xctest */;
+			name = ScreebReactDemoAppTests;
+			productName = ScreebReactDemoAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* ScreebReactDemoAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* ReactDemoApp */ = {
+		13B07F861A680F5B00A75B9A /* ScreebReactDemoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactDemoApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ScreebReactDemoApp" */;
 			buildPhases = (
-				7F060CBEDF59D0F5DBD206EC /* [CP] Check Pods Manifest.lock */,
+				A23F9548882344515A19BDAB /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				D4606D4725C29C4B1B4C7943 /* [CP] Embed Pods Frameworks */,
-				EF543EE7AAF287A3F874D6D1 /* [CP] Copy Pods Resources */,
+				79246EFA2AF9258BA0778CFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ReactDemoApp;
-			productName = ReactDemoApp;
-			productReference = 13B07F961A680F5B00A75B9A /* ReactDemoApp.app */;
+			name = ScreebReactDemoApp;
+			productName = ScreebReactDemoApp;
+			productReference = 13B07F961A680F5B00A75B9A /* ScreebReactDemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,11 +213,11 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactDemoApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ScreebReactDemoApp" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* ReactDemoApp */,
-				00E356ED1AD99517003FC87E /* ReactDemoAppTests */,
+				13B07F861A680F5B00A75B9A /* ScreebReactDemoApp */,
+				00E356ED1AD99517003FC87E /* ScreebReactDemoAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +270,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		7F060CBEDF59D0F5DBD206EC /* [CP] Check Pods Manifest.lock */ = {
+		60F90621534F7C85405D85AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		692AA29035277235B064F93F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,14 +302,31 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactDemoApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ScreebReactDemoApp-ScreebReactDemoAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DC5C3E379127C7E956014F4 /* [CP] Check Pods Manifest.lock */ = {
+		79246EFA2AF9258BA0778CFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreebReactDemoApp/Pods-ScreebReactDemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreebReactDemoApp/Pods-ScreebReactDemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreebReactDemoApp/Pods-ScreebReactDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23F9548882344515A19BDAB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,79 +341,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactDemoApp-ReactDemoAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ScreebReactDemoApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC38FE457DA13890407FA589 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp-ReactDemoAppTests/Pods-ReactDemoApp-ReactDemoAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp-ReactDemoAppTests/Pods-ReactDemoApp-ReactDemoAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp-ReactDemoAppTests/Pods-ReactDemoApp-ReactDemoAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4606D4725C29C4B1B4C7943 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp/Pods-ReactDemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp/Pods-ReactDemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp/Pods-ReactDemoApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E487111726071BF9A535F9F1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp-ReactDemoAppTests/Pods-ReactDemoApp-ReactDemoAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp-ReactDemoAppTests/Pods-ReactDemoApp-ReactDemoAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp-ReactDemoAppTests/Pods-ReactDemoApp-ReactDemoAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF543EE7AAF287A3F874D6D1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp/Pods-ReactDemoApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp/Pods-ReactDemoApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactDemoApp/Pods-ReactDemoApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -403,7 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* ReactDemoAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* ScreebReactDemoAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				EB445EF52767C270005E307B /* ScreebWrapper.m in Sources */,
+				EB445EF32767C216005E307B /* ScreebWrapper.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +394,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* ReactDemoApp */;
+			target = 13B07F861A680F5B00A75B9A /* ScreebReactDemoApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,14 +402,15 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7400CE8E723C7D95B4D44983 /* Pods-ReactDemoApp-ReactDemoAppTests.debug.xcconfig */;
+			baseConfigurationReference = 75C3D7E5F78D91FDDDF51AEC /* Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReactDemoAppTests/Info.plist;
+				INFOPLIST_FILE = ScreebReactDemoAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,17 +424,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactDemoApp.app/ReactDemoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreebReactDemoApp.app/ScreebReactDemoApp";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFD13FD92A56B0870E56F8CE /* Pods-ReactDemoApp-ReactDemoAppTests.release.xcconfig */;
+			baseConfigurationReference = 91ACE2D329AD85580141D5E1 /* Pods-ScreebReactDemoApp-ScreebReactDemoAppTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactDemoAppTests/Info.plist;
+				INFOPLIST_FILE = ScreebReactDemoAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,19 +449,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactDemoApp.app/ReactDemoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreebReactDemoApp.app/ScreebReactDemoApp";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67F0F5295E7E6E426047D402 /* Pods-ReactDemoApp.debug.xcconfig */;
+			baseConfigurationReference = B3FAEA19C06B654F821C495E /* Pods-ScreebReactDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = ReactDemoApp/Info.plist;
+				INFOPLIST_FILE = ScreebReactDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,22 +471,24 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ReactDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = app.screeb.ScreebReactDemoApp;
+				PRODUCT_NAME = ScreebReactDemoApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreebReactDemoApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CA92CF0EB1913A25BB1B22A /* Pods-ReactDemoApp.release.xcconfig */;
+			baseConfigurationReference = 9EBDE92787940E1B0FBFCC34 /* Pods-ScreebReactDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = ReactDemoApp/Info.plist;
+				INFOPLIST_FILE = ScreebReactDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,9 +498,11 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ReactDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = app.screeb.ScreebReactDemoApp;
+				PRODUCT_NAME = ScreebReactDemoApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreebReactDemoApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -583,6 +562,7 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
@@ -641,6 +621,7 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
@@ -654,7 +635,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactDemoAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ScreebReactDemoAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -663,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactDemoApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ScreebReactDemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -672,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactDemoApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ScreebReactDemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

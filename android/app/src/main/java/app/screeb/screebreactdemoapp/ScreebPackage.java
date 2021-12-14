@@ -1,4 +1,4 @@
-package com.reactdemoapp;
+package app.screeb.screebreactdemoapp;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;

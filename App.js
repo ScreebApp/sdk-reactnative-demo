@@ -1,3 +1,10 @@
+/**
+ * 
+ * Home screen for Screeb demo react native app
+ *
+ * @author clement@screeb.app
+ */
+
 import React from 'react';
 import type {Node} from 'react';
 import {

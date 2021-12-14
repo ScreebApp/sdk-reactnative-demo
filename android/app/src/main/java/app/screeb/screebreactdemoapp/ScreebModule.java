@@ -1,4 +1,4 @@
-package com.reactdemoapp;
+package app.screeb.screebreactdemoapp;
 
 import android.util.Log;
 
@@ -8,6 +8,8 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 
 import androidx.annotation.NonNull;
+
+import static app.screeb.screebreactdemoapp.MainApplication.*;
 
 public class ScreebModule extends ReactContextBaseJavaModule {
 
@@ -24,25 +26,25 @@ public class ScreebModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void setIdentity(String userId) {
         Log.d("ScreebModule", "Called setIdentity : " + userId);
-        MainApplication.screeb.setIdentity(userId);
+        screeb.setIdentity(userId);
     }
 
     @ReactMethod
     public void trackEvent(String eventId) {
         Log.d("ScreebModule", "Called trackEvent : " + eventId);
-        MainApplication.screeb.trackEvent(eventId, null);
+        screeb.trackEvent(eventId, null);
     }
 
     @ReactMethod
     public void trackScreen(String screen) {
         Log.d("ScreebModule", "Called trackScreen : " + screen);
-        MainApplication.screeb.trackScreen(screen, null);
+        screeb.trackScreen(screen, null);
     }
 
     @ReactMethod
     public void setVisitorProperties(ReadableMap properties) {
         Log.d("ScreebModule",
               "Called setVisitorProperties with " + properties.toHashMap().size() + " properties");
-        MainApplication.screeb.setVisitorProperties(properties.toHashMap());
+        screeb.setVisitorProperties(properties.toHashMap());
     }
 }
