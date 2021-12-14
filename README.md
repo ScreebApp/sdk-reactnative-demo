@@ -139,6 +139,9 @@ RCT_EXTERN_METHOD(setVisitorProperties:(NSDictionary<NSString *, id> *)propertie
 @end
 ```
 
+NB : You can see we have chosen to expose the ScreebWrapper file as `ScreebModule`, this
+will have an importance in the next section, in the js ReatNative files.
+
 Finally, the initialization of the SDK should be placed into the `AppDelegate.m` file, 
 
 ```objc
