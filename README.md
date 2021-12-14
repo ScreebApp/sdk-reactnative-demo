@@ -95,6 +95,7 @@ protected List<ReactPackage> getPackages() {
 
 The Screeb SDK is written in Swift v5.0. We need to bridge the Screeb.swift file 
 with objective-C to access it in React Native project.
+
 First, we create a swift file called `ScreebWrapper.swift` and start to implement 
 all functions that call the Screeb commands with the @objc annotation :
 
@@ -144,7 +145,7 @@ Finally, the initialization of the SDK should be placed into the `AppDelegate.m`
 [[[ScreebWrapper alloc] init] initScreeb:self.window.rootViewController];
 ```
 
-
+For more details, you can find the complete configuration in the /ios directory.
 
 ## SDK usage :
 
