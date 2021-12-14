@@ -18,6 +18,7 @@ sdk in a React native project.
 To test the demo app, git clone the project then run in a terminal : 
 
 ```bash
+# Start Metro, the JavaScript bundler that ships with React Native
 npx react-native start
 ```
 
