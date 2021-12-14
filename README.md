@@ -10,6 +10,8 @@ ___
 
 React Native demo app for Screeb
 
+![ios screenshot](reactnative-ios.png)
+
 ## Intro
 
 This project is a starting point for a all developers who wish to integrate native Android and iOS Screeb
