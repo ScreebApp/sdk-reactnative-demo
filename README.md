@@ -12,7 +12,7 @@ React Native demo app for Screeb
 
 ## Intro
 
-This project is a starting point for a all developers that wish to integrate native Android and iOS Screeb
+This project is a starting point for a all developers who wish to integrate native Android and iOS Screeb
 sdk in a React native project.
 
 To test the demo app, git clone the project then run in a terminal : 
@@ -124,7 +124,7 @@ class ScreebWrapper: NSObject {
 }
 ```
 
-Then, we need to create a `ScreebWrapper.m` objective-C file and declare the bridging options :
+Then, we create a `ScreebWrapper.m` objective-C file and declare the bridging options :
 
 ```objc
 #import "React/RCTBridgeModule.h"
@@ -142,7 +142,7 @@ RCT_EXTERN_METHOD(setVisitorProperties:(NSDictionary<NSString *, id> *)propertie
 ```
 
 NB : You can see we have chosen to expose the ScreebWrapper file as `ScreebModule`, this
-will have an importance in the next section, in the js ReatNative files.
+will have an importance in the next section, in the js ReactNative files.
 
 Finally, the initialization of the SDK should be placed into the `AppDelegate.m` file, 
 
