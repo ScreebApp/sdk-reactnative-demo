@@ -38,7 +38,7 @@ For Android you need to add the Screeb sdk dependency in the Android build.gradl
 [the instructions](https://github.com/ScreebApp/DemoAppAndroid) on the repo of the Android demo app.
 
 For iOS you need to add the Screeb sdk dependency in the Podfile of the app, you'll find
-[the instructions](https://github.com/ScreebApp/sdk-ios-public) on the repo of the iOs sdk.
+[the instructions](https://github.com/ScreebApp/sdk-ios-public) on the repo of the iOS sdk.
 
 
 ## SDK configuration for Android
@@ -46,7 +46,7 @@ For iOS you need to add the Screeb sdk dependency in the Podfile of the app, you
 Like in the Android demo app, the access point of the SDK must be created in a custom Application
 class, see `MainApplication.java`. You should create a Screeb instance using the builder and
 reference it in a static variable to be used later in your app.
-The builder needs the channel id provided int the Screeb admin web page :
+The builder needs the channel id provided in the Screeb admin web page :
 
 ```java
 @Override
@@ -54,7 +54,7 @@ public void onCreate(){
    super.onCreate();
 
    screeb = new Screeb.Builder()
-                   .withChannelId("082b7590-1621-4f72-8030-731a98cd1448")
+                   .withChannelId("<channel-id>")
                    .withContext(this)
                    .build();
 }
@@ -110,7 +110,8 @@ class ScreebWrapper: NSObject {
   
   @objc(initScreeb:)
   func initScreebImpl(context: UIViewController) {
-    Screeb.initSdk(context: context, channelId: "5c62c145-91f1-4abd-8aa2-63d7847db1e1")
+    // Insert here the channelId provided in the Screeb admin web page
+    Screeb.initSdk(context: context, channelId: "<channel-id>")
   }
   
   @objc(setIdentity:)
