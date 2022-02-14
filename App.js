@@ -21,21 +21,23 @@ const { ScreebModule } = NativeModules;
 
 const App: () => Node = () => {
   const onSetIdentity = () => {
-      ScreebModule.setIdentity('ReactNativeUserId');
+      ScreebModule.setIdentity('ReactNativeUserId', null);
   };
   const onTrackEvent = () => {
-      ScreebModule.trackEvent('ReactNativeEventId');
+      ScreebModule.trackEvent('ReactNativeEventId', null);
   };
   const onTrackScreen = () => {
-      ScreebModule.trackScreen('ReactNativeScreen');
+      ScreebModule.trackScreen('ReactNativeScreen', null);
   };
   const onSetVisitorProperties = () => {
-      ScreebModule.setVisitorProperties(
+      ScreebModule.setProperties(
             {
                'age': 10,
                'isReactNative': true,
                'name': 'React name',
-               'price': 65.7 });
+               'price': 65.7
+            }
+      );
   };
   return (
     <SafeAreaView style={styles.sectionContainer}>

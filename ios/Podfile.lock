@@ -278,7 +278,7 @@ PODS:
     - React-jsi (= 0.66.4)
     - React-logger (= 0.66.4)
     - React-perflogger (= 0.66.4)
-  - Screeb (0.6.0):
+  - Screeb (1.1.0):
     - Alamofire (~> 5.4)
     - AlamofireNetworkActivityLogger (~> 3.4)
     - Kingfisher (~> 7.0)
@@ -318,7 +318,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - Screeb (= 0.6.0)
+  - Screeb (= 1.1.0)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -426,10 +426,10 @@ SPEC CHECKSUMS:
   React-RCTVibration: e3ffca672dd3772536cb844274094b0e2c31b187
   React-runtimeexecutor: dec32ee6f2e2a26e13e58152271535fadff5455a
   ReactCommon: 57b69f6383eafcbd7da625bfa6003810332313c4
-  Screeb: 3efd7fb6f52cc2468f3c279b41694ef370c6c65f
+  Screeb: c2e55c8ecb163d159139a48727085c9d6b69c5d7
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   Yoga: e7dc4e71caba6472ff48ad7d234389b91dadc280
 
-PODFILE CHECKSUM: 7cd4535507c4a1616b9f47d94415f5161b2718aa
+PODFILE CHECKSUM: 534b1fdc05d3c3960a8c7d02204fa9df2c14ed12
 
 COCOAPODS: 1.11.2

@@ -7,7 +7,7 @@ target 'ScreebReactDemoApp' do
   config = use_native_modules!
   use_frameworks!
   
-  pod "Screeb", "0.6.0"
+  pod "Screeb", "1.1.0"
   
   use_react_native!(
     :path => config[:reactNativePath],

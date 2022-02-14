@@ -1,11 +1,14 @@
 package app.screeb.screebreactdemoapp;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
+
+import java.util.HashMap;
 
 import androidx.annotation.NonNull;
 
@@ -24,25 +27,47 @@ public class ScreebModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void setIdentity(String userId) {
+    public void initSdk(String channelId, String userId, ReadableMap properties) {
         Log.d("ScreebModule", "Called setIdentity : " + userId);
-        screeb.setIdentity(userId);
+        HashMap<String, Object > map = null;
+        if (properties != null){
+            map = properties.toHashMap();
+        }
+        screeb.pluginInit(channelId, userId, map);
     }
 
     @ReactMethod
-    public void trackEvent(String eventId) {
+    public void setIdentity(String userId, ReadableMap properties) {
+        Log.d("ScreebModule", "Called setIdentity : " + userId);
+        HashMap<String, Object > map = null;
+        if (properties != null){
+            map = properties.toHashMap();
+        }
+        screeb.setIdentity(userId, map);
+    }
+
+    @ReactMethod
+    public void trackEvent(String eventId, ReadableMap properties) {
         Log.d("ScreebModule", "Called trackEvent : " + eventId);
-        screeb.trackEvent(eventId, null);
+        HashMap<String, Object > map = null;
+        if (properties != null){
+            map = properties.toHashMap();
+        }
+        screeb.trackEvent(eventId, map);
     }
 
     @ReactMethod
-    public void trackScreen(String screen) {
+    public void trackScreen(String screen, ReadableMap properties) {
         Log.d("ScreebModule", "Called trackScreen : " + screen);
-        screeb.trackScreen(screen, null);
+        HashMap<String, Object > map = null;
+        if (properties != null){
+            map = properties.toHashMap();
+        }
+        screeb.trackScreen(screen, map);
     }
 
     @ReactMethod
-    public void setVisitorProperties(ReadableMap properties) {
+    public void setProperties(ReadableMap properties) {
         Log.d("ScreebModule",
               "Called setVisitorProperties with " + properties.toHashMap().size() + " properties");
         screeb.setVisitorProperties(properties.toHashMap());
