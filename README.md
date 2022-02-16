@@ -1,4 +1,4 @@
-[![Maven Central](https://img.shields.io/maven-central/v/app.screeb.sdk/android-sdk.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22app.screeb.sdk%22%20AND%20a:%22android-sdk%22)
+[![Maven Central](https://img.shields.io/maven-central/v/app.screeb.sdk/survey.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22app.screeb.sdk%22%20AND%20a:%22survey%22)
 [![Version](https://img.shields.io/cocoapods/v/Screeb.svg?style=flat)](https://cocoapods.org/pods/Screeb)
 
 __:warning:  Android and iOS SDK have been released in beta. 
